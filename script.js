@@ -119,68 +119,24 @@ function updateComputerScore(thisResult, currentComputerScore){
   }
 }
 
+function game(){
+  getPlayerChoice();
+  getComputerChoice();
+  console.log(computerChoice);
+  play(playerChoice, computerChoice);
+  console.log(result);
+
+  updateComputerScore(result, computerScore);
+  updatePlayerScore(result, playerScore);
+  console.log(scoring);
+}
+
 function gameOfFive(){
-  getPlayerChoice();
-  getComputerChoice();
-  console.log(computerChoice);
-  play(playerChoice, computerChoice);
-  console.log(result);
-
-  updateComputerScore(result, computerScore);
-  updatePlayerScore(result, playerScore);
-  console.log(scoring);
-
-
-
-
-  getPlayerChoice();
-  getComputerChoice();
-  console.log(computerChoice);
-  play(playerChoice, computerChoice);
-  console.log(result);
-
-  updateComputerScore(result, computerScore);
-  updatePlayerScore(result, playerScore);
-  console.log(scoring);
-
-
-
-
-  getPlayerChoice();
-  getComputerChoice();
-  console.log(computerChoice);
-  play(playerChoice, computerChoice);
-  console.log(result);
-
-  updateComputerScore(result, computerScore);
-  updatePlayerScore(result, playerScore);
-  console.log(scoring);
-
-
-
-
-  getPlayerChoice();
-  getComputerChoice();
-  console.log(computerChoice);
-  play(playerChoice, computerChoice);
-  console.log(result);
-
-  updateComputerScore(result, computerScore);
-  updatePlayerScore(result, playerScore);
-  console.log(scoring);
-
-
-
-
-  getPlayerChoice();
-  getComputerChoice();
-  console.log(computerChoice);
-  play(playerChoice, computerChoice);
-  console.log(result);
-
-  updateComputerScore(result, computerScore);
-  updatePlayerScore(result, playerScore);
-  console.log(scoring);
+  game();
+  game();
+  game();
+  game();
+  game();
 }
 
 gameOfFive();
