@@ -99,23 +99,23 @@ function play(playerSelection, computerSelection) {
   }
 }
 
-function updatePlayerScore(thisResult, currentPlayerScore, currentComputerScore){
+function updatePlayerScore(thisResult, currentPlayerScore){
   if (thisResult === "You Won! Good job!"){
     playerScore = currentPlayerScore + 1;
-    scoring = `Your score is ${currentPlayerScore}. Computer's score is ${currentComputerScore}.`;
+    scoring = `Your score is ${playerScore}. Computer's score is ${computerScore}.`;
   }
   else {
-    scoring = `Your score is ${currentPlayerScore}. Computer's score is ${currentComputerScore}.`;
+    scoring = `Your score is ${playerScore}. Computer's score is ${computerScore}.`;
   }
 }
 
-function updateComputerScore(thisResult, currentPlayerScore, currentComputerScore){
+function updateComputerScore(thisResult, currentComputerScore){
   if (thisResult === "Computer won!"){
     computerScore = currentComputerScore + 1;
-    scoring = `Your score is ${currentPlayerScore}. Computer's score is ${currentComputerScore}.`
+    scoring = `Your score is ${playerScore}. Computer's score is ${computerScore}.`
   }
   else {
-    scoring = `Your score is ${currentPlayerScore}. Computer's score is ${currentComputerScore}.`
+    scoring = `Your score is ${playerScore}. Computer's score is ${computerScore}.`
   }
 }
 
@@ -126,8 +126,8 @@ function gameOfFive(){
   play(playerChoice, computerChoice);
   console.log(result);
 
-  updateComputerScore(result, playerScore, computerScore);
-  updatePlayerScore(result, playerScore, computerScore);
+  updateComputerScore(result, computerScore);
+  updatePlayerScore(result, playerScore);
   console.log(scoring);
 
 
@@ -139,8 +139,8 @@ function gameOfFive(){
   play(playerChoice, computerChoice);
   console.log(result);
 
-  updateComputerScore(result, playerScore, computerScore);
-  updatePlayerScore(result, playerScore, computerScore);
+  updateComputerScore(result, computerScore);
+  updatePlayerScore(result, playerScore);
   console.log(scoring);
 
 
@@ -152,8 +152,8 @@ function gameOfFive(){
   play(playerChoice, computerChoice);
   console.log(result);
 
-  updateComputerScore(result, playerScore, computerScore);
-  updatePlayerScore(result, playerScore, computerScore);
+  updateComputerScore(result, computerScore);
+  updatePlayerScore(result, playerScore);
   console.log(scoring);
 
 
@@ -165,8 +165,8 @@ function gameOfFive(){
   play(playerChoice, computerChoice);
   console.log(result);
 
-  updateComputerScore(result, playerScore, computerScore);
-  updatePlayerScore(result, playerScore, computerScore);
+  updateComputerScore(result, computerScore);
+  updatePlayerScore(result, playerScore);
   console.log(scoring);
 
 
@@ -178,8 +178,8 @@ function gameOfFive(){
   play(playerChoice, computerChoice);
   console.log(result);
 
-  updateComputerScore(result, playerScore, computerScore);
-  updatePlayerScore(result, playerScore, computerScore);
+  updateComputerScore(result, computerScore);
+  updatePlayerScore(result, playerScore);
   console.log(scoring);
 }
 
